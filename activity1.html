@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsob in js</title>
+</head>
+<body>
+    <h1>JSON IN JS</h1>
+    <p id="p1"> </p>
+        <script>
+           var obj={name:"mahika",age:10,grade:11} ;
+           var JSONobj=JSON.stringify(obj);
+           var myobj=JSON.parse(JSONobj);
+           document.getElementById("p1").innerHTML="Name Received is "+myobj.name+" with grade "+myobj.grade+"of age "+myobj.age;
+        </script>
+</body>
+</html>
